@@ -5,7 +5,6 @@ import time
 import os
 import sqlite3 # Install mysql-connector-python BELOW!!
 # pip install mysql-connector-python
-import pyodbc
 from datetime import datetime
 GPIO.setmode(GPIO.BOARD)
 GPIO.setwarnings(False)
