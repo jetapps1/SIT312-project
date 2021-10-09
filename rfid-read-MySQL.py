@@ -56,7 +56,7 @@ class Logger:
        # sql = "INSERT INTO Tag (Tag_ID_number, Time_recorded, Information) VALUES (%s, %s, %s)"
         #sql = "INSERT INTO Tag (Tag_ID_number, Time_recorded, Information) VALUES ('12345678', '20120618 10:34:09 AM', '1234Test_Data')" 
        # cursor.execute(sql, values_to_insert)
-        cursor.execute("INSERT INTO Tag (Tag_ID_number, Time_recorded, Information) VALUES ('12345678', '20120618 10:34:09 AM', '1234Test_Data')")
+        cursor.execute("INSERT INTO rfidDB.Tag (Tag_ID, Time_recorded, Information) VALUES ('12345678', '2020-12-22 06:49:46', '1234Test_Data')")
         connection.commit()
         
         print(cursor.rowcount, "record inserted")
